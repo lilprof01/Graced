@@ -20,12 +20,11 @@ export default function LandingPage() {
     ["About", "about"],
     ["Experience", "experience"],
     ["Projects", "projects"],
-    ["Reviews", "reviews"],
     ["Contact", "contact"],
   ];
 
   const reviews = [
-    "Jane kept our distributed team perfectly aligned and motivated — product launched early! – CTO, Acme Corp",
+    "Precious kept our distributed team perfectly aligned and motivated — product launched early! – CTO, Acme Corp",
     "Her risk-mitigation mindset saved us thousands during a critical pivot. – COO, BrightTech",
     "Communication was seamless; stakeholders always knew status and next steps. – Founder, DevSolutions",
   ];
@@ -46,11 +45,11 @@ export default function LandingPage() {
                 .getElementById("hero")
                 ?.scrollIntoView({ behavior: "smooth" })
             }
-            className="text-2xl font-bold"
+            className="text-xl sm:text-2xl font-bold"
           >
             PE<span style={{ color: primary }}>.</span>
           </button>
-          <nav className="hidden md:flex gap-8 text-sm font-medium">
+          <nav className="hidden md:flex gap-8 font-medium">
             {navItems.map(([label, id]) => (
               <button
                 key={id}
@@ -65,7 +64,7 @@ export default function LandingPage() {
               </button>
             ))}
           </nav>
-          <nav className="md:hidden flex gap-4 text-sm font-medium">
+          <nav className="md:hidden flex gap-3 text-sm font-medium">
             {navItems.map(([label, id]) => (
               <button
                 key={id}
@@ -89,7 +88,7 @@ export default function LandingPage() {
         className="grid lg:grid-cols-2 items-center min-h-[80vh] sm:min-h-screen gap-8 pt-24 px-6 md:px-12"
       >
         <motion.div
-          className="h-72 md:h-96 bg-[url(/hero2.jpg)] rounded-2xl overflow-clip bg-cover bg-center"
+          className="h-72 md:h-96 bg-[url(/hero2.jpg)] rounded-2xl overflow-clip bg-cover bg-center order-2 lg:order-1"
           initial={{ scale: 0.95, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 1 }}
@@ -101,16 +100,16 @@ export default function LandingPage() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
+          className="order-1 lg:order-2"
         >
           <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mb-4">
-            Turning <span style={{ color: primary }}>chaos</span> into
+            Turning <span style={{ color: primary }}>Clutter</span> into
             coordinated success.
           </h1>
           <p className="text-lg mb-8 max-w-prose">
-            I’m Precious Ebele, a results-driven project manager who aligns teams,
-            timelines and budgets to deliver products that wow.
+            I help teams and individuals move from scattered to streamlined, with guidance that makes every task count.
           </p>
-          <button className="">
+          <button className="bg-black dark:bg-white text-white dark:text-black px-6 py-2 rounded-xl hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer">
             <a href="#projects">See My Works</a>
           </button>
         </motion.div>
@@ -127,8 +126,10 @@ export default function LandingPage() {
       >
         <div>
           <h2 className="text-3xl font-bold mb-6">About Me</h2>
+          <p className="text-lg leading-relaxed max-w-prose mb-2">I’m Precious Ebele, a results-driven project manager who aligns teams,
+            timelines and budgets to deliver products that wow.</p>
           <p className="text-lg leading-relaxed max-w-prose">
-            With 6+ years orchestrating cross-functional teams across tech and
+            With 3+ years orchestrating cross-functional teams across tech and
             creative industries, I bridge strategy with execution—keeping
             stakeholders confident and deliverables on target. Adept at Agile
             frameworks, risk mitigation and fostering transparent communication,
@@ -189,13 +190,13 @@ export default function LandingPage() {
       >
         <h2 className="text-3xl font-bold mb-10 text-center">Projects</h2>
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {Array.from({ length: 6 }).map((_, i) => (
+          {Array.from({ length: 3 }).map((_, i) => (
             <div
               key={i}
               className="relative h-56 rounded-xl flex flex-col justify-between overflow-hidden transition-transform duration-300 group shadow-sm dark:shadow-blue-600"
               style={{ cursor: "default" }}
             >
-              <span className="absolute inset-0 rounded-xl bg-black opacity-0 group-hover:opacity-70 dark:group-hover:opacity-100 dark:group-hover:bg-blue-600 transition-opacity duration-300" />
+              <span className="absolute inset-0 rounded-xl bg-black opacity-0 group-hover:opacity-70 dark:group-hover:opacity-100 dark:group-hover:bg-blue-600 transition-opacity duration-300 ease-in-out" />
               <div className="relative p-6 space-y-3 text-gray-900 dark:text-white group-hover:text-white transition-colors">
                 <h3 className="text-xl font-semibold transition-colors">
                   Project Title {i + 1}
@@ -271,7 +272,7 @@ export default function LandingPage() {
       {/* Contact */}
       <motion.section
         id="contact"
-        className="py-20 px-6 max-w-3xl mx-auto"
+        className="py-20 px-6 max-w-2xl mx-auto"
         variants={sectionFade}
         initial="hidden"
         whileInView="visible"
@@ -312,11 +313,11 @@ export default function LandingPage() {
               name="message"
               rows={4}
               required
-              className="w-full rounded-md border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary"
+              className="w-full rounded-md border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary resize-none"
             />
           </label>
           <div className="flex justify-end">
-            <button type="submit" className="w-auto">
+            <button type="submit" className="w-auto bg-black dark:bg-white text-white dark:text-black px-6 py-1 rounded-xl hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer">
               Send
             </button>
           </div>
@@ -359,7 +360,7 @@ export default function LandingPage() {
             </div>
           </div>
           <p className="text-xs border-t border-white/20 pt-4">
-            developed with ❤️ by Smart
+            developed with ❤️ by <a href="https://x.com/aniya_juwon" target="_blank" className="underline hover:text-blue-600 transition-all duration-300 ease-in-out">Smart</a>
           </p>
         </div>
       </footer>
