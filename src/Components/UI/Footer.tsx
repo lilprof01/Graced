@@ -14,14 +14,14 @@ const Footer = () => {
             </p>
             <div className="flex gap-6 justify-center md:justify-start">
               <a
-                href="mailto:hello@example.com"
+                href="mailto:princess.ebele@gmail.com"
                 aria-label="Email"
                 className="hover:opacity-80"
               >
                 <Mail size={20} />
               </a>
               <a
-                href="https://github.com/username"
+                href="https://x.com/pretttyebi"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
@@ -30,7 +30,7 @@ const Footer = () => {
                 <Twitter size={20} />
               </a>
               <a
-                href="https://linkedin.com/in/username"
+                href="https://linkedin.com/in/princessebele"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
