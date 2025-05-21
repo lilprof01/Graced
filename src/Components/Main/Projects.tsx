@@ -63,7 +63,7 @@ const Projects = () => {
           <a
             href="https://princessebele.my.canva.site/black-aesthethic-education-online-portfolio"
             target="_blank"
-            className="px-6 py-2 bg-primary rounded-xl cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out"
+            className="px-6 py-2 bg-primary text-white rounded-xl cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out"
           >
             See More
           </a>
