@@ -9,9 +9,9 @@ const Reviews = () => {
     setIndex((i: number) => (i + dir + reviews.length) % reviews.length);
 
   const reviews = [
-    "Princess kept our distributed team perfectly aligned and motivated — product launched early! – CTO, Acme Corp",
-    "Her risk-mitigation mindset saved us thousands during a critical pivot. – COO, BrightTech",
-    "Communication was seamless; stakeholders always knew status and next steps. – Founder, DevSolutions",
+    "Princess's lectures are always loaded with concise and digestible information, she is no doubt a master at what she does – Mr. Abiola Abatan",
+    "I've had the chance to be in a conversation with Princess, and she is brilliant, she made me understand the true and in-depth meaning of what waterfall is in difference to agile methodology – Diosa Zah",
+    // "Communication was seamless; stakeholders always knew status and next steps. – Founder, DevSolutions",
   ];
   return (
     <motion.section
