@@ -84,6 +84,8 @@ const Contact = () => {
           </button>
         </div>
       </form>
+
+      <div className="flex flex-col sm:flex-row justify-center items-center text-center gap-1 mt-10">Or send me a direct email: <a href="mailto:princess.ebele@gmail.com" className="underline hover:text-primary transition-all duration-300 ease-in-ou">princess.ebele@gmail.com</a></div>
     </motion.section>
   );
 };
