@@ -9,7 +9,7 @@ const Reviews = () => {
     setIndex((i: number) => (i + dir + reviews.length) % reviews.length);
 
   const reviews = [
-    "Precious kept our distributed team perfectly aligned and motivated — product launched early! – CTO, Acme Corp",
+    "Princess kept our distributed team perfectly aligned and motivated — product launched early! – CTO, Acme Corp",
     "Her risk-mitigation mindset saved us thousands during a critical pivot. – COO, BrightTech",
     "Communication was seamless; stakeholders always knew status and next steps. – Founder, DevSolutions",
   ];

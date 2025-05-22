@@ -14,7 +14,7 @@ const About = () => {
         <div>
           <h2 className="text-3xl font-bold mb-6">About Me</h2>
           <p className="text-lg leading-relaxed max-w-prose mb-2">
-            I’m Precious Ebele, a results-driven project manager who aligns
+            I’m Princess Ebele, a results-driven project manager who aligns
             teams, timelines and budgets to deliver products that wow.
           </p>
           <p className="text-lg leading-relaxed max-w-prose">

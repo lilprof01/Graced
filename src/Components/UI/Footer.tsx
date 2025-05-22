@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="max-w-6xl mx-auto space-y-4">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <p className="text-sm">
-              © {new Date().getFullYear()} Precious Ebele. All rights reserved.
+              © {new Date().getFullYear()} Princess Ebele. All rights reserved.
             </p>
             <div className="flex gap-6 justify-center md:justify-start">
               <a
